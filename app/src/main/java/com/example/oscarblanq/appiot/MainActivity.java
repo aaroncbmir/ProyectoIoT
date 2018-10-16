@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+
 /**
 ********************************************************************************
                         MENÚ ACTION BAR     (ANDROID 3.0)
@@ -27,6 +28,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override public boolean onOptionsItemSelected(MenuItem item) {
+
+        //------------------------------------------------------------
+        //---------------------- USUARIO -------------------------
+
+
+
+        //------------------------------------------------------------
+
         int id = item.getItemId();
         if (id == R.id.action_settings) {
             lanzarPreferencias(null);
@@ -54,5 +63,7 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this, PreferenciasActivity.class);
         startActivity(i);
     }
+
+
 
 }
